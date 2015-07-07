@@ -1,0 +1,14 @@
+{
+  "name": "factorial-io-components-breadcrumb",
+  "repo": "factorial-io-components-breadcrumb",
+  "version": "0.1.0",
+  "styles": ["breadcrumb.css"],
+  "scripts": [],
+  "templates": ["breadcrumb.tpl.haml"],
+  "dependencies": {},
+  "license": "MIT",
+  "backend": {
+    "template": "breadcrumb.tpl.haml",
+    "arguments": {}
+  }
+}

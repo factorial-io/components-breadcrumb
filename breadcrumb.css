@@ -1,0 +1,59 @@
+/** @define Breadcrumb; use strict */
+
+:root {
+  --Breadcrumb-display: inline-block;
+  --Breadcrumb-display-sm: var(--Breadcrumb-display);
+  --Breadcrumb-display-md: var(--Breadcrumb-display-sm);
+  --Breadcrumb-display-lg: var(--Breadcrumb-display-md);
+  --Breadcrumb-spacing: 5px;
+  --Breadcrumb-seperator: –;
+  --Breadcrumb-link-color: value;
+  --Breadcrumb-link-color-hover: var(--Breadcrumb-link-color);
+  --Breadcrumb-link-color-visited: var(--Breadcrumb-link-color);
+}
+
+.Breadcrumb-item {
+  display: var(--Breadcrumb-display);
+}
+
+@media (--sm-viewport) {
+  .Breadcrumb-item {
+    display: var(--Breadcrumb-display-sm);
+  }
+}
+
+@media (--md-viewport) {
+  .Breadcrumb-item {
+    display: var(--Breadcrumb-display-md);
+  }
+}
+
+@media (--lg-viewport) {
+  .Breadcrumb-item {
+    display: var(--Breadcrumb-display-lg);
+  }
+}
+
+.Breadcrumb-item:before {
+  display: inline-block;
+  margin-right: var(--Breadcrumb-spacing);
+  content: "var(--Breadcrumb-seperator)";
+}
+
+.Breadcrumb-item:first-child:before {
+  content: none;
+}
+
+.Breadcrumb-link {
+  margin-right: var(--Breadcrumb-spacing);;
+  color: var(--Breadcrumb-link-color);
+  border-bottom: 1px solid currentcolor; /* REVIEW */
+}
+
+.Breadcrumb-link:hover {
+  color: var(--Breadcrumb-link-color-hover);
+}
+
+.Breadcrumb-link:visited {
+  color: var(--Breadcrumb-link-color-visited);
+}
