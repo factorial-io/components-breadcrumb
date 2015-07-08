@@ -1,8 +1,8 @@
 %ul.Breadcrumb
-  - foreach ($breadcrumb as $crumb)
+  - foreach ($breadcrumb as $index => $crumb)
     %li.Breadcrumb-item
-      - if (!isset($crumb['current']))
+      - if (count($breadcrumb) - 1 == $index)
+        = $crumb['title']
+      - else
         %a.Breadcrumb-link(href=$crumb['url'])
           = $crumb['title']
-      - else
-        = $crumb['title']

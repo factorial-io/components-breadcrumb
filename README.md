@@ -26,15 +26,15 @@ $your_array = array(
     ),
     array(
       'title' => 'Child Page',
-      'url' => '/'
+      'url' => '/url-to-child-page'
     ),
     array(
       'title' => 'Grandchild Page',
-      'current' => 'true'
     ),
   )
 )
 ```
+
 
 ## Usage
 
