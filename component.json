@@ -1,7 +1,7 @@
 {
   "name": "factorial-io-components-breadcrumb",
   "repo": "factorial-io/components-breadcrumb",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "styles": ["breadcrumb.css"],
   "scripts": [],
   "templates": ["breadcrumb.tpl.haml"],
