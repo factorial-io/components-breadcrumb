@@ -17,7 +17,7 @@ A Factorial.io component to display a breadcrumb with configurable space and sep
 ## Configuration
 
 The component array needs to look like this:
-```
+```php
 $your_array = array(
   'breadcrumb' => array(
     array(
